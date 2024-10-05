@@ -7,30 +7,18 @@ export default function Index() {
       <Text style={style.title}>List of screens.</Text>
       <View style={style.list_screen}>
         <Link style={style.list_item} href={"/screens\\useStateView"}>
-          1. UseState screen
+          1. UseState example
         </Link>
         <Link style={style.list_item} href={"/screens\\useReducer"}>
-          2. UseReducer screen
+          2. UseReducer example
         </Link>
-        {/*
-        <Link style={style.list_item} href={"/screens/1_b"}>
-          3. 1_b screen
+
+        <Link style={style.list_item} href={"/screens\\useEffect"}>
+          3. UseEffect example
         </Link>
-        <Link style={style.list_item} href={"/screens/1_c"}>
-          4. 1_c screen
+        <Link style={style.list_item} href={"/screens\\useRef"}>
+          4. UseRef example
         </Link>
-        <Link style={style.list_item} href={"/screens/1_d"}>
-          5. 1_d screen
-        </Link>
-        <Link style={style.list_item} href={"/screens/1_e"}>
-          6. 1_e screen
-        </Link>
-        <Link style={style.list_item} href={"/screens/2_a"}>
-          7. 2_a screen
-        </Link>
-        <Link style={style.list_item} href={"/screens/xmlEye"}>
-          8. XMLEye screen
-        </Link> */}
       </View>
     </View>
   );
