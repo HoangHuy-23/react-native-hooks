@@ -23,7 +23,14 @@ const counterReducer = (state: State, action: Action): State => {
 export default function CounterApp() {
   const [state, dispatch] = useReducer(counterReducer, { count: 0 });
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+    <View
+      style={{
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        gap: 10,
+      }}
+    >
       <Text style={{ fontSize: 32 }}>Count: {state.count}</Text>
 
       <Button title="Tăng" onPress={() => dispatch({ type: "increment" })} />

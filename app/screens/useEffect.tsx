@@ -22,7 +22,14 @@ export default function TimerApp() {
   }, [isRunning]);
 
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+    <View
+      style={{
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        gap: 10,
+      }}
+    >
       <Text style={{ fontSize: 32 }}>Timer: {count}</Text>
       <Button
         title={isRunning ? "Pause" : "Start"}

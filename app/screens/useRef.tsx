@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { View, Text, Button } from "react-native";
+import { View, Text, Button, StyleSheet } from "react-native";
 
 export default function TimerApp() {
   const countRef = useRef<number>(0);
@@ -29,7 +29,14 @@ export default function TimerApp() {
   };
 
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+    <View
+      style={{
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        gap: 10,
+      }}
+    >
       <Text style={{ fontSize: 32 }}>Timer: {renderCount}</Text>
       <Button title="Start Timer" onPress={startTimer} />
       <Button title="Stop Timer" onPress={stopTimer} />
