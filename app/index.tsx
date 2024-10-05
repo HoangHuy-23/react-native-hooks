@@ -7,11 +7,12 @@ export default function Index() {
       <Text style={style.title}>List of screens.</Text>
       <View style={style.list_screen}>
         <Link style={style.list_item} href={"/screens\\useStateView"}>
-          1. Use state screen
+          1. UseState screen
         </Link>
-        {/* <Link style={style.list_item} href={"/screens/1_a"}>
-          2. 1_a screen
+        <Link style={style.list_item} href={"/screens\\useReducer"}>
+          2. UseReducer screen
         </Link>
+        {/*
         <Link style={style.list_item} href={"/screens/1_b"}>
           3. 1_b screen
         </Link>
